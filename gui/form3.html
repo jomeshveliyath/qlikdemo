@@ -1,0 +1,21 @@
+		<center>
+		<div id="portal" style="width:50%; height:100%">
+    
+
+<script>
+function process()
+{
+var xhttp = new XMLHttpRequest();
+var url="http://qlik.scribblings.in:5000/api/message/" + document.getElementById("url").value;
+xhttp.open("POST", url, false);
+xhttp.send();
+return false;
+}
+</script>
+<form onSubmit="return process();">
+Enter the Message ID: <input type="text" name="url" id="url"> <button type="button" onclick="return process();">Go</button>
+</form>
+
+
+    	</div>
+    	</center>
