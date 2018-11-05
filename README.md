@@ -32,6 +32,8 @@ The API is written in python using the flask framework for the web services. The
     {"action":"List All Messages","error":null,"info":"Success","response":[{"id":1111111111,"message":"Welcome to Qlik message store"},{"id":1541368272,"message":"This is a test message"}],"status":200}
     $ curl http://qlik.scribblings.in:5000/api/message/1541368272
     {"action":"List Specific Message","error":null,"info":"Success::Palindrome Check - Failed","response":{"id":1541368272,"message":"This is a test message"},"status":200}
+    
+Also a gui has been integrated to this api server and is implemented on the URL http://qlik.scribblings.in:8080
 
 ### Deployment
 The application stack has been built with two component services *api* and a basic *gui*(in pure html). These services are also configured to run on docker platform. The build process of the application would require git and docker containerization platform preferred on Ubuntu Linux. The installation steps are in the following [documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1)
@@ -64,3 +66,25 @@ After installation and verification of the docker platform, the build can be don
 3. There are improvements with the automation of build steps when softwares like Terraform/Ansible are used to bootstrap the server with the pre-requirements.
 
 4. Also docker-compose builds are preferred when there is a need for service orchestration.
+
+## License - MIT
+
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
