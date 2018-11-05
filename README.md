@@ -57,3 +57,10 @@ After installation and verification of the docker platform, the build can be don
     docker run -d -p 8080:80 qlikgui
  
  ### Scope of Improvements
+1. The in-memory message store can be replaced by persistant storages like files or databases, which can improve the reliability of the application.
+
+2. The pure html gui interface can be improved by collaborating it with server side scripting languages like asp, php or jsp which will improve the data filtering and thus the application can mprove programatically.
+
+3. There are improvements with the automation of build steps when softwares like Terraform/Ansible are used to bootstrap the server with the pre-requirements.
+
+4. Also docker-compose builds are preferred when there is a need for service orchestration.
